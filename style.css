@@ -1,0 +1,31 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(32, 32, 30);
+    margin-top: -30px;
+}
+
+#container {
+    margin-top: 50px;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    border: 5px solid white;
+    border-radius: 5px;
+    height: 575px;
+    width: 575px;
+    background-color: gray;
+    box-shadow: 10px 10px;
+}
+
+.grid-item {
+    background-color: white;
+    border: 1px solid black;
+}
+
