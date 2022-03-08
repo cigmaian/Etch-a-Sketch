@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+ <head>
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=VT323">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" async></script>
     <title>Sketch</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div id="container">
-
-    </div>
-
-     <div class="btns">
+    <h1 id="title">Etch a Sketch</h1>
+    <div class="btns">
         <button id="reset">Reset</button>
-
-
-    <script src="script.js" defer></script>
+        <button id="black">Black</button>
+        <button id="rgb">RGB</button>
+        <div class="colorAndPrompt">
+            <input type="color" id="color">
+            <p>choose a color</p>
+        </div>
+        <div class="sliderAndValue">
+            <input type="range" min="2" max="100" value="16" id="slider">
+            <p class="value">16</p>
+        </div>
+    </div>  
+    <div class="grid"></div>
+    <footer> <a href=https://github.com/cigmaian> <img id="gh-logo" src="git-img.png" alt="github logo"/></a>
+    <script>
+        document.write(new Date().getFullYear())
+    </script>
+    
+    </footer>
 </body>
 </html>
