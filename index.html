@@ -1,6 +1,5 @@
 <!DOCTYPE html>
  <head>
-   
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=VT323">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +13,8 @@
         <button id="reset">Reset</button>
         <button id="black">Black</button>
         <button id="rgb">RGB</button>
+        <button id="canva"> Canvas</button> 
+        <button id="canvaReset"> Canva Reset </button>
         <div class="colorAndPrompt">
             <input type="color" id="color">
             <p>choose a color</p>
@@ -22,8 +23,14 @@
             <input type="range" min="2" max="100" value="16" id="slider">
             <p class="value">16</p>
         </div>
+     
     </div>  
     <div class="grid"></div>
+    <div class="canvasAndValue">
+         <canvas id="draw" width="900" height="900"></canvas>  
+            </button>
+        </div>
+
     <footer> <a href=https://github.com/cigmaian> <img id="gh-logo" src="git-img.png" alt="github logo"/></a>
     <script>
         document.write(new Date().getFullYear())
